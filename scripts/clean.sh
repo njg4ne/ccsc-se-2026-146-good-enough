@@ -2,4 +2,4 @@
 
 podman compose run --rm tex latexmk -c
 
-git clean -fdX
+git clean -fd
