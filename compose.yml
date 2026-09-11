@@ -1,0 +1,16 @@
+services:
+  typ:
+    image: pandoc/typst:3.10.0.0-alpine
+    volumes:
+      - ./src:/root
+    working_dir: /root
+    entrypoint: []
+    command: sh
+    # command: pandoc instructions.md -o instructions.rst
+  tex:
+    image: registry.gitlab.com/islandoftex/images/texlive:latest
+    volumes:
+      - ./src:/home/texlive
+    user: texlive
+    working_dir: /home/texlive
+    entrypoint: []
