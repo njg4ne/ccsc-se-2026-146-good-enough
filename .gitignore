@@ -1,2 +1,13 @@
 src/manuscript.bbl
 src/manuscript.dvi
+src/latexmk.log
+.DS_Store
+.gitignore
+src/manuscript.aux
+src/manuscript.bcf
+src/manuscript.blg
+src/manuscript.fdb_latexmk
+src/manuscript.fls
+src/manuscript.log
+src/manuscript.out
+src/manuscript.run.xml
