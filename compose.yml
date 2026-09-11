@@ -14,4 +14,4 @@ services:
     user: texlive
     working_dir: /home/texlive
     entrypoint: []
-    command: latexmk -pdf -interaction=nonstopmode manuscript.tex
+    command: sh -c "latexmk -c > latexmk.log 2>&1; latexmk -pdf -interaction=nonstopmode manuscript.tex >> latexmk.log 2>&1"
