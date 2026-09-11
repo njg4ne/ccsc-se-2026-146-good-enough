@@ -14,3 +14,4 @@ services:
     user: texlive
     working_dir: /home/texlive
     entrypoint: []
+    command: latexmk -pdf -interaction=nonstopmode manuscript.tex
