@@ -1,13 +1,14 @@
-src/manuscript.bbl
-src/manuscript.dvi
-src/latexmk.log
+# TeX auxiliary & build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+
+# macOS system files
 .DS_Store
-.gitignore
-src/manuscript.aux
-src/manuscript.bcf
-src/manuscript.blg
-src/manuscript.fdb_latexmk
-src/manuscript.fls
-src/manuscript.log
-src/manuscript.out
-src/manuscript.run.xml
