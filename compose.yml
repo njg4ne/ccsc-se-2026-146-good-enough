@@ -1,9 +1,11 @@
 services:
   tex:
-    image: registry.gitlab.com/islandoftex/images/texlive:latest
+    build:
+      context: .
+      dockerfile: Containerfile
     volumes:
       - ./src:/home/texlive
     user: texlive
     working_dir: /home/texlive
     entrypoint: []
-    command: sh -c "latexmk -c > latexmk.log 2>&1; latexmk -pdf -interaction=nonstopmode manuscript.tex >> latexmk.log 2>&1"
+    command: sh -c "latexmk -c > latexmk.log 2>&1; latexmk -lualatex -interaction=nonstopmode manuscript.tex >> latexmk.log 2>&1"
